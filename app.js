@@ -5,7 +5,7 @@ const app = express();
 const port = 4000;
 
 // Define el intervalo de tiempo en minutos
-const intervalo = 60; // Cambia este valor según tus necesidades
+const intervalo = 30; // Cambia este valor según tus necesidades
 
 cron.schedule(`*/${intervalo} * * * *`, async () => {
     try {
