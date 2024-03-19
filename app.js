@@ -9,8 +9,8 @@ const intervalo = 40 * 1000; // 40 segundos
 
 setInterval(async () => {
     try {
-        const response = await axios.get('http://localhost:3000/ping');
-       //const response = await axios.get('https://control-vencimientos.onrender.com/');
+        //const response = await axios.get('http://localhost:3000/ping');
+        const response = await axios.get('https://control-vencimientos.onrender.com');
         console.log(`Petición realizada a las ${moment().tz('America/Bogota').format('YYYY-MM-DD HH:mm:ss')}`);
         console.log(response.data);
     } catch (error) {
