@@ -1,0 +1,14 @@
+{
+  "name": "demonguet",
+  "version": "1.0.0",
+  "description": "Un servidor Node.js con Express que envía una petición GET a otro servidor cada hora",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.21.1",
+    "node-cron": "^3.0.0"
+  }
+}
