@@ -5,7 +5,7 @@ const app = express();
 const port = 4000;
 
 // Define el intervalo de tiempo en segundos
-const intervalo = 40 * 1000; // 40 segundos
+const intervalo = 4 * 60 * 1000; // 4 minutos
 
 setInterval(async () => {
     try {
@@ -20,7 +20,7 @@ setInterval(async () => {
 }, intervalo);
 
 app.get('/ping', function (req, res) {
-    res.send('pong'); 
+    res.send('pong');
    })
 
 app.listen(port, () => {
