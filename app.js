@@ -5,7 +5,8 @@ const app = express();
 const port = 4000;
 
 // Define el intervalo de tiempo en segundos
-const intervalo = 2 * 60 * 1000; // 2 minutos
+//const intervalo = 2 * 60 * 1000; // 2minutos
+const intervalo = 54 * 1000; // 54 segundos
 
 setInterval(async () => {
     try {
